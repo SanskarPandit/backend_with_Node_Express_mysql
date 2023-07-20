@@ -40,7 +40,7 @@ app.patch("/update/:phone", (req, res) => {
 });
 
 //Show all data
-app.get("/", (req, res) => {
+app.get("/show", (req, res) => {
   Connection.query("SELECT * FROM contact", (err, rows) => {
     if (err) {
       console.log(err);
